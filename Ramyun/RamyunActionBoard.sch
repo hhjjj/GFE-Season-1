@@ -1442,6 +1442,12 @@ WSR25L000FEA / Vshay</description>
 <part name="JP3" library="GFE" deviceset="JP2" device=""/>
 <part name="JP4" library="GFE" deviceset="JP2" device=""/>
 <part name="R19" library="GFE" deviceset="R" device="0603(1608)_HAND" value="4.7k"/>
+<part name="GND16" library="GFE" deviceset="GND" device=""/>
+<part name="GND17" library="GFE" deviceset="GND" device=""/>
+<part name="GND18" library="GFE" deviceset="GND" device=""/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1502,15 +1508,15 @@ WSR25L000FEA / Vshay</description>
 <instance part="D6" gate="G$1" x="271.78" y="116.84" rot="R90"/>
 <instance part="D7" gate="G$1" x="271.78" y="101.6" rot="R90"/>
 <instance part="D8" gate="G$1" x="271.78" y="83.82" rot="R90"/>
-<instance part="R9" gate="G$1" x="226.06" y="58.42"/>
-<instance part="R10" gate="G$1" x="226.06" y="45.72"/>
-<instance part="R11" gate="G$1" x="226.06" y="30.48"/>
-<instance part="U9" gate="G$1" x="50.8" y="223.52"/>
-<instance part="U10" gate="G$1" x="88.9" y="223.52"/>
-<instance part="U11" gate="G$1" x="129.54" y="223.52"/>
+<instance part="R9" gate="G$1" x="231.14" y="58.42"/>
+<instance part="R10" gate="G$1" x="231.14" y="38.1"/>
+<instance part="R11" gate="G$1" x="231.14" y="15.24"/>
+<instance part="U9" gate="G$1" x="27.94" y="241.3"/>
+<instance part="U10" gate="G$1" x="66.04" y="241.3"/>
+<instance part="U11" gate="G$1" x="106.68" y="241.3"/>
 <instance part="U12" gate="G$1" x="137.16" y="45.72"/>
 <instance part="Q1" gate="G$1" x="134.62" y="27.94"/>
-<instance part="R12" gate="G$1" x="121.92" y="45.72" rot="R90"/>
+<instance part="R12" gate="G$1" x="129.54" y="45.72" rot="R90"/>
 <instance part="R13" gate="G$1" x="116.84" y="27.94"/>
 <instance part="P+2" gate="1" x="137.16" y="68.58"/>
 <instance part="C2" gate="G$1" x="144.78" y="60.96" rot="R90"/>
@@ -1523,22 +1529,28 @@ WSR25L000FEA / Vshay</description>
 <instance part="GND_EXT9" gate="G$1" x="279.4" y="236.22"/>
 <instance part="V_EXT10" gate="G$1" x="304.8" y="248.92"/>
 <instance part="GND_EXT10" gate="G$1" x="304.8" y="236.22"/>
-<instance part="P+3" gate="1" x="254" y="251.46"/>
+<instance part="P+3" gate="1" x="254" y="248.92"/>
 <instance part="GND12" gate="1" x="254" y="236.22"/>
 <instance part="R16" gate="G$1" x="157.48" y="132.08"/>
 <instance part="R17" gate="G$1" x="157.48" y="129.54"/>
 <instance part="R18" gate="G$1" x="157.48" y="127"/>
-<instance part="+3V3" gate="G$1" x="35.56" y="203.2" rot="R90"/>
-<instance part="+3V4" gate="G$1" x="73.66" y="203.2" rot="R90"/>
-<instance part="GND13" gate="1" x="43.18" y="203.2" rot="R270"/>
-<instance part="GND14" gate="1" x="81.28" y="203.2" rot="R270"/>
-<instance part="+3V5" gate="G$1" x="137.16" y="203.2" rot="R180"/>
-<instance part="GND15" gate="1" x="134.62" y="198.12"/>
+<instance part="+3V3" gate="G$1" x="12.7" y="220.98" rot="R90"/>
+<instance part="+3V4" gate="G$1" x="50.8" y="220.98" rot="R90"/>
+<instance part="GND13" gate="1" x="20.32" y="220.98" rot="R270"/>
+<instance part="GND14" gate="1" x="58.42" y="220.98" rot="R270"/>
+<instance part="+3V5" gate="G$1" x="114.3" y="218.44" rot="R180"/>
+<instance part="GND15" gate="1" x="111.76" y="223.52"/>
 <instance part="JP1" gate="G$1" x="35.56" y="106.68"/>
 <instance part="JP2" gate="G$1" x="35.56" y="93.98"/>
 <instance part="JP3" gate="G$1" x="35.56" y="152.4"/>
 <instance part="JP4" gate="G$1" x="35.56" y="139.7"/>
-<instance part="R19" gate="G$1" x="139.7" y="195.58" rot="R90"/>
+<instance part="R19" gate="G$1" x="116.84" y="213.36" rot="R90"/>
+<instance part="GND16" gate="1" x="233.68" y="50.8"/>
+<instance part="GND17" gate="1" x="233.68" y="30.48"/>
+<instance part="GND18" gate="1" x="233.68" y="7.62"/>
+<instance part="P+4" gate="1" x="233.68" y="68.58"/>
+<instance part="P+5" gate="1" x="233.68" y="45.72"/>
+<instance part="P+6" gate="1" x="233.68" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -1551,20 +1563,20 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="VIN"/>
-<wire x1="40.64" y1="213.36" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="231.14" x2="17.78" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<wire x1="38.1" y1="203.2" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="220.98" x2="17.78" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="VIN"/>
-<wire x1="78.74" y1="213.36" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="231.14" x2="55.88" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<wire x1="76.2" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="220.98" x2="55.88" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <pinref part="U11" gate="G$1" pin="VIN"/>
-<wire x1="137.16" y1="205.74" x2="137.16" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="220.98" x2="114.3" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1638,18 +1650,33 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="GND"/>
-<wire x1="45.72" y1="213.36" x2="45.72" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="231.14" x2="22.86" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="GND"/>
-<wire x1="83.82" y1="213.36" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="231.14" x2="60.96" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U11" gate="G$1" pin="GND"/>
-<wire x1="134.62" y1="213.36" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="231.14" x2="111.76" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="233.68" y1="53.34" x2="233.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="55.88" x2="241.3" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="233.68" y1="33.02" x2="233.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="35.56" x2="241.3" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="233.68" y1="10.16" x2="233.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="12.7" x2="241.3" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1841,10 +1868,10 @@ WSR25L000FEA / Vshay</description>
 <net name="N$29" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="5"/>
-<wire x1="243.84" y1="132.08" x2="264.16" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="132.08" x2="264.16" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="132.08" x2="251.46" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="132.08" x2="251.46" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="264.16" y1="134.62" x2="271.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="134.62" x2="271.78" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="134.62" x2="281.94" y2="134.62" width="0.1524" layer="91"/>
 <junction x="271.78" y="134.62"/>
 </segment>
@@ -1852,10 +1879,10 @@ WSR25L000FEA / Vshay</description>
 <net name="N$30" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="5"/>
-<wire x1="243.84" y1="116.84" x2="264.16" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="116.84" x2="264.16" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="116.84" x2="251.46" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="116.84" x2="251.46" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="264.16" y1="119.38" x2="271.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="119.38" x2="271.78" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="119.38" x2="281.94" y2="119.38" width="0.1524" layer="91"/>
 <junction x="271.78" y="119.38"/>
 </segment>
@@ -1863,10 +1890,10 @@ WSR25L000FEA / Vshay</description>
 <net name="N$31" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="5"/>
-<wire x1="243.84" y1="101.6" x2="264.16" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="101.6" x2="264.16" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="101.6" x2="251.46" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="101.6" x2="251.46" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="D7" gate="G$1" pin="C"/>
-<wire x1="264.16" y1="104.14" x2="271.78" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="104.14" x2="271.78" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="104.14" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
 <junction x="271.78" y="104.14"/>
 </segment>
@@ -1874,10 +1901,10 @@ WSR25L000FEA / Vshay</description>
 <net name="N$32" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="5"/>
-<wire x1="243.84" y1="83.82" x2="264.16" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="83.82" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="83.82" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="83.82" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="D8" gate="G$1" pin="C"/>
-<wire x1="264.16" y1="86.36" x2="271.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="86.36" x2="271.78" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="86.36" x2="281.94" y2="86.36" width="0.1524" layer="91"/>
 <junction x="271.78" y="86.36"/>
 </segment>
@@ -1982,8 +2009,8 @@ WSR25L000FEA / Vshay</description>
 <wire x1="137.16" y1="33.02" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="38.1" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="40.64" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="38.1" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="40.64" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="38.1" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
 <junction x="137.16" y="38.1"/>
 </segment>
 </net>
@@ -2002,13 +2029,13 @@ WSR25L000FEA / Vshay</description>
 <net name="+5V" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="50.8" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="50.8" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="P$1"/>
-<wire x1="121.92" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="55.88" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="53.34" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="137.16" y1="55.88" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
-<junction x="137.16" y="55.88"/>
+<wire x1="137.16" y1="53.34" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
+<junction x="137.16" y="53.34"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="60.96" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
@@ -2021,8 +2048,23 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="254" y1="248.92" x2="254" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="254" y1="246.38" x2="259.08" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="254" y1="246.38" x2="254" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="254" y1="243.84" x2="259.08" y2="243.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<wire x1="233.68" y1="66.04" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="60.96" x2="241.3" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="233.68" y1="43.18" x2="233.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="40.64" x2="241.3" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="233.68" y1="20.32" x2="233.68" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="17.78" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -2075,13 +2117,13 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="SDO"/>
-<wire x1="50.8" y1="213.36" x2="50.8" y2="205.74" width="0.1524" layer="91"/>
-<label x="50.8" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="27.94" y1="231.14" x2="27.94" y2="223.52" width="0.1524" layer="91"/>
+<label x="27.94" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="SDO"/>
-<wire x1="88.9" y1="213.36" x2="88.9" y2="205.74" width="0.1524" layer="91"/>
-<label x="88.9" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="66.04" y1="231.14" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
+<label x="66.04" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2092,13 +2134,13 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="SDI"/>
-<wire x1="53.34" y1="213.36" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
-<label x="53.34" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="30.48" y1="231.14" x2="30.48" y2="223.52" width="0.1524" layer="91"/>
+<label x="30.48" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="SDI"/>
-<wire x1="91.44" y1="213.36" x2="91.44" y2="205.74" width="0.1524" layer="91"/>
-<label x="91.44" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="68.58" y1="231.14" x2="68.58" y2="223.52" width="0.1524" layer="91"/>
+<label x="68.58" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -2109,20 +2151,20 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="SCK"/>
-<wire x1="48.26" y1="213.36" x2="48.26" y2="205.74" width="0.1524" layer="91"/>
-<label x="48.26" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="25.4" y1="231.14" x2="25.4" y2="223.52" width="0.1524" layer="91"/>
+<label x="25.4" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="SCK"/>
-<wire x1="86.36" y1="213.36" x2="86.36" y2="205.74" width="0.1524" layer="91"/>
-<label x="86.36" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="63.5" y1="231.14" x2="63.5" y2="223.52" width="0.1524" layer="91"/>
+<label x="63.5" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="TEMP1_CS" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="CS"/>
-<wire x1="55.88" y1="213.36" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
-<label x="55.88" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="33.02" y1="231.14" x2="33.02" y2="223.52" width="0.1524" layer="91"/>
+<label x="33.02" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
@@ -2134,8 +2176,8 @@ WSR25L000FEA / Vshay</description>
 <net name="TEMP2_CS" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="CS"/>
-<wire x1="93.98" y1="213.36" x2="93.98" y2="205.74" width="0.1524" layer="91"/>
-<label x="93.98" y="205.74" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="71.12" y1="231.14" x2="71.12" y2="223.52" width="0.1524" layer="91"/>
+<label x="71.12" y="223.52" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
@@ -2147,15 +2189,15 @@ WSR25L000FEA / Vshay</description>
 <net name="N$34" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="PPS"/>
-<wire x1="139.7" y1="213.36" x2="139.7" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="231.14" x2="116.84" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GPS_TX" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="TX"/>
-<wire x1="129.54" y1="213.36" x2="129.54" y2="203.2" width="0.1524" layer="91"/>
-<label x="129.54" y="203.2" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="106.68" y1="231.14" x2="106.68" y2="226.06" width="0.1524" layer="91"/>
+<label x="106.68" y="226.06" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
@@ -2166,8 +2208,8 @@ WSR25L000FEA / Vshay</description>
 <net name="GPS_RX" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="RX"/>
-<wire x1="132.08" y1="213.36" x2="132.08" y2="203.2" width="0.1524" layer="91"/>
-<label x="132.08" y="203.2" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="109.22" y1="231.14" x2="109.22" y2="226.06" width="0.1524" layer="91"/>
+<label x="109.22" y="226.06" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
@@ -2184,8 +2226,8 @@ WSR25L000FEA / Vshay</description>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="190.5" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
-<label x="139.7" y="185.42" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="116.84" y1="208.28" x2="116.84" y2="203.2" width="0.1524" layer="91"/>
+<label x="116.84" y="203.2" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="SDA_EXT" class="0">
@@ -2224,6 +2266,11 @@ WSR25L000FEA / Vshay</description>
 <wire x1="35.56" y1="101.6" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
 <label x="30.48" y="101.6" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
+<label x="215.9" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SERVO_3" class="0">
 <segment>
@@ -2231,6 +2278,11 @@ WSR25L000FEA / Vshay</description>
 <wire x1="35.56" y1="91.44" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 <label x="30.48" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="15.24" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
+<label x="215.9" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2377,6 +2429,29 @@ WSR25L000FEA / Vshay</description>
 <pinref part="MS1" gate="G$1" pin="GPIO9"/>
 <wire x1="91.44" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
 <label x="73.66" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
+<label x="215.9" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="58.42" x2="241.3" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="38.1" x2="241.3" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="15.24" x2="241.3" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
