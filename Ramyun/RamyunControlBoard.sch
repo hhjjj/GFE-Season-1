@@ -42314,6 +42314,21 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$2" x="0" y="5.08" drill="1.1" diameter="1.9"/>
 <pad name="P$3" x="2.54" y="5.08" drill="1.1" diameter="1.9"/>
 </package>
+<package name="TP-13">
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1"/>
+<text x="-1.016" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP-5010">
+<description>keystone 5010 testpoint</description>
+<pad name="TP" x="0" y="0" drill="1.6" diameter="2.6"/>
+<text x="-1.016" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="M02">
@@ -42327,6 +42342,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="TP">
+<wire x1="-0.762" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.762" x2="0" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.524" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
+<text x="-1.27" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="1.778" layer="97">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -42544,6 +42568,29 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP-13">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-5010" package="TP-5010">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -48554,6 +48601,10 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="4.1"/>
 <part name="GND28" library="GFE" deviceset="GND" device=""/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="4.1"/>
+<part name="TP1" library="berry" deviceset="TP" device="-5010"/>
+<part name="TP2" library="berry" deviceset="TP" device="-5010"/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="GND29" library="GFE" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -48682,6 +48733,10 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="H3" gate="G$1" x="238.76" y="10.16"/>
 <instance part="GND28" gate="1" x="355.6" y="111.76" rot="R90"/>
 <instance part="H4" gate="G$1" x="266.7" y="12.7"/>
+<instance part="TP1" gate="G$1" x="180.34" y="91.44"/>
+<instance part="TP2" gate="G$1" x="195.58" y="91.44"/>
+<instance part="P+5" gate="1" x="175.26" y="83.82" rot="R90"/>
+<instance part="GND29" gate="1" x="200.66" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -48988,6 +49043,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="347.98" y1="111.76" x2="353.06" y2="111.76" width="0.1524" layer="91"/>
 <junction x="347.98" y="111.76"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND29" gate="1" pin="GND"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<wire x1="198.12" y1="83.82" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="83.82" x2="195.58" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -49440,6 +49501,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="106.68" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="30.48" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="177.8" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="83.82" x2="180.34" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXT_5V" class="0">

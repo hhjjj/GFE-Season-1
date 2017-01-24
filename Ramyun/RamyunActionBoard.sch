@@ -42602,6 +42602,21 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$2" x="0" y="5.08" drill="1.1" diameter="1.9"/>
 <pad name="P$3" x="2.54" y="5.08" drill="1.1" diameter="1.9"/>
 </package>
+<package name="TP-13">
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1"/>
+<text x="-1.016" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP-5010">
+<description>keystone 5010 testpoint</description>
+<pad name="TP" x="0" y="0" drill="1.6" diameter="2.6"/>
+<text x="-1.016" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="M02">
@@ -42615,6 +42630,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="TP">
+<wire x1="-0.762" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.762" x2="0" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.524" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
+<text x="-1.27" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="1.778" layer="97">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -42832,6 +42856,29 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP-13">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-5010" package="TP-5010">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -49217,6 +49264,18 @@ Silk outline shows header location.
 <part name="GND16" library="GFE" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="4.1"/>
+<part name="TP1" library="berry" deviceset="TP" device="-5010"/>
+<part name="TP2" library="berry" deviceset="TP" device="-5010"/>
+<part name="TP3" library="berry" deviceset="TP" device="-5010"/>
+<part name="TP4" library="berry" deviceset="TP" device="-5010"/>
+<part name="P+10" library="supply1" deviceset="+5V" device=""/>
+<part name="V_EXT1" library="GFE" deviceset="V_EXT1" device=""/>
+<part name="V_EXT2" library="GFE" deviceset="V_EXT2" device=""/>
+<part name="TP5" library="berry" deviceset="TP" device="-5010"/>
+<part name="GND26" library="GFE" deviceset="GND" device=""/>
+<part name="TP6" library="berry" deviceset="TP" device="-5010"/>
+<part name="GND_EXT1" library="GFE" deviceset="GND_EXT2" device=""/>
+<part name="GND_EXT2" library="GFE" deviceset="GND_EXT1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -49365,6 +49424,18 @@ Silk outline shows header location.
 <instance part="GND16" gate="1" x="220.98" y="220.98"/>
 <instance part="P+9" gate="1" x="220.98" y="251.46"/>
 <instance part="H4" gate="G$1" x="248.92" y="25.4"/>
+<instance part="TP1" gate="G$1" x="327.66" y="223.52"/>
+<instance part="TP2" gate="G$1" x="337.82" y="223.52"/>
+<instance part="TP3" gate="G$1" x="345.44" y="223.52"/>
+<instance part="TP4" gate="G$1" x="353.06" y="223.52"/>
+<instance part="P+10" gate="1" x="322.58" y="218.44" rot="R90"/>
+<instance part="V_EXT1" gate="1" x="332.74" y="218.44" rot="R90"/>
+<instance part="V_EXT2" gate="G$1" x="340.36" y="218.44" rot="R90"/>
+<instance part="TP5" gate="G$1" x="360.68" y="223.52"/>
+<instance part="GND26" gate="1" x="353.06" y="213.36"/>
+<instance part="TP6" gate="G$1" x="368.3" y="223.52"/>
+<instance part="GND_EXT1" gate="G$1" x="368.3" y="213.36"/>
+<instance part="GND_EXT2" gate="G$1" x="360.68" y="213.36"/>
 </instances>
 <busses>
 </busses>
@@ -49538,6 +49609,11 @@ Silk outline shows header location.
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="220.98" y1="223.52" x2="220.98" y2="226.06" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND26" gate="1" pin="GND"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="353.06" y1="215.9" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -49658,6 +49734,11 @@ Silk outline shows header location.
 <wire x1="279.4" y1="241.3" x2="284.48" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="X7" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="360.68" y1="215.9" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="GND_EXT2" gate="G$1" pin="GND_EXT1"/>
+</segment>
 </net>
 <net name="V_EXT1" class="0">
 <segment>
@@ -49705,6 +49786,12 @@ Silk outline shows header location.
 <wire x1="279.4" y1="246.38" x2="279.4" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="243.84" x2="284.48" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="X7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="V_EXT1" gate="1" pin="V_EXT1"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<wire x1="335.28" y1="218.44" x2="337.82" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="218.44" x2="337.82" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -49842,6 +49929,11 @@ Silk outline shows header location.
 <wire x1="304.8" y1="241.3" x2="309.88" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="X16" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="368.3" y1="215.9" x2="368.3" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="GND_EXT1" gate="G$1" pin="GND_EXT2"/>
+</segment>
 </net>
 <net name="V_EXT2" class="0">
 <segment>
@@ -49889,6 +49981,12 @@ Silk outline shows header location.
 <wire x1="304.8" y1="246.38" x2="304.8" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="243.84" x2="309.88" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="X16" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="V_EXT2" gate="G$1" pin="V_EXT2"/>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<wire x1="342.9" y1="218.44" x2="345.44" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="218.44" x2="345.44" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -49985,6 +50083,12 @@ Silk outline shows header location.
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="MS1" gate="G$1" pin="USB"/>
 <wire x1="73.66" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+10" gate="1" pin="+5V"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="325.12" y1="218.44" x2="327.66" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="218.44" x2="327.66" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -50201,8 +50305,8 @@ Silk outline shows header location.
 <net name="SDA" class="0">
 <segment>
 <pinref part="MS1" gate="G$1" pin="GPIOSDA"/>
-<wire x1="91.44" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
-<label x="86.36" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
+<label x="76.2" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -50213,8 +50317,8 @@ Silk outline shows header location.
 <net name="SCL" class="0">
 <segment>
 <pinref part="MS1" gate="G$1" pin="GPIOSCL"/>
-<wire x1="91.44" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
-<label x="86.36" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
+<label x="76.2" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
