@@ -48618,7 +48618,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="MS1" gate="G$1" x="170.18" y="109.22" rot="R90"/>
 <instance part="IC1" gate="G$1" x="279.4" y="132.08"/>
 <instance part="VBUS1" gate="G$1" x="124.46" y="129.54" rot="R90"/>
-<instance part="3.3V7" gate="G$1" x="185.42" y="119.38"/>
+<instance part="3.3V7" gate="G$1" x="187.96" y="116.84" rot="R270"/>
 <instance part="GND20" gate="1" x="190.5" y="121.92" rot="R90"/>
 <instance part="X1" gate="G$1" x="30.48" y="218.44" rot="R180"/>
 <instance part="X14" gate="G$1" x="124.46" y="215.9" rot="R180"/>
@@ -48758,8 +48758,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <segment>
 <pinref part="MS1" gate="G$1" pin="3V"/>
 <pinref part="3.3V7" gate="G$1" pin="3.3V"/>
-<wire x1="175.26" y1="116.84" x2="185.42" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="116.84" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$2" pin="V+"/>

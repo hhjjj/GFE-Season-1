@@ -239,6 +239,29 @@
 <wire x1="-29.48165" y1="-61.52305" x2="-21.28205" y2="-63.104040625" width="0.001" layer="20"/>
 <text x="-7.62" y="50.8" size="2.1844" layer="1" font="vector" ratio="10">Project R</text>
 <text x="-7.62" y="50.8" size="2.1844" layer="29" font="vector" ratio="10">Project R</text>
+<text x="44.45" y="-5.08" size="1.27" layer="21" font="vector">VBUS</text>
+<text x="44.45" y="-1.905" size="1.27" layer="21" font="vector">D-</text>
+<text x="44.45" y="0.635" size="1.27" layer="21" font="vector">D+</text>
+<text x="44.45" y="3.175" size="1.27" layer="21" font="vector">GND</text>
+<text x="-39.37" y="-50.165" size="1.27" layer="21" font="vector">VEXT1</text>
+<text x="-39.37" y="-52.705" size="1.27" layer="21" font="vector">GEXT1</text>
+<text x="-64.77" y="-5.08" size="1.27" layer="21" font="vector" rot="SR270">OUTB1</text>
+<text x="-62.23" y="-15.24" size="1.27" layer="21" font="vector" rot="SR270">OUTB2</text>
+<text x="-58.42" y="-25.4" size="1.27" layer="21" font="vector" rot="SR270">OUTB3</text>
+<text x="-50.8" y="-35.56" size="1.27" layer="21" font="vector" rot="SR270">OUTB4</text>
+<text x="-50.8" y="43.18" size="1.27" layer="21" font="vector" rot="SR270">OUTA1</text>
+<text x="-58.42" y="33.02" size="1.27" layer="21" font="vector" rot="SR270">OUTA2</text>
+<text x="-62.23" y="21.59" size="1.27" layer="21" font="vector" rot="SR270">OUTA3</text>
+<text x="-64.77" y="12.7" size="1.27" layer="21" font="vector" rot="SR270">OUTA4</text>
+<text x="-39.37" y="48.895" size="1.27" layer="21" font="vector">GEXT2</text>
+<text x="-39.37" y="51.435" size="1.27" layer="21" font="vector">VEXT2</text>
+<text x="48.895" y="40.005" size="1.27" layer="21" font="vector" rot="R90">HP</text>
+<text x="62.23" y="15.24" size="1.27" layer="21" font="vector" rot="R90">5V</text>
+<text x="62.23" y="17.78" size="1.27" layer="21" font="vector" rot="R90">GND</text>
+<text x="62.23" y="-19.05" size="1.27" layer="21" font="vector" rot="R90">SERVO1</text>
+<text x="58.42" y="-31.75" size="1.27" layer="21" font="vector" rot="R90">SERVO2</text>
+<text x="49.53" y="-43.18" size="1.27" layer="21" font="vector" rot="R90">SERVO3</text>
+<text x="55.88" y="31.75" size="1.27" layer="21" font="vector" rot="R90">LED</text>
 </plain>
 <libraries>
 <library name="GFE">
@@ -21335,9 +21358,6 @@ design rules under a new name.</description>
 <contactref element="R5" pad="1"/>
 <contactref element="MS1" pad="23"/>
 <wire x1="15.24" y1="-29.09" x2="15.24" y2="-29.21" width="0.3048" layer="1"/>
-<wire x1="15.24" y1="-29.21" x2="13.97" y2="-30.48" width="0.3048" layer="1"/>
-<wire x1="13.97" y1="-30.48" x2="12.7" y2="-30.48" width="0.3048" layer="1"/>
-<wire x1="12.7" y1="-30.48" x2="11.43" y2="-29.21" width="0.3048" layer="1"/>
 <wire x1="11.5" y1="-25.5" x2="15" y2="-29" width="0.254" layer="1"/>
 <wire x1="11.5" y1="-21.5" x2="11.5" y2="-25.5" width="0.254" layer="1"/>
 <wire x1="7.5" y1="-17.5" x2="11.5" y2="-21.5" width="0.254" layer="1"/>
@@ -21896,9 +21916,10 @@ design rules under a new name.</description>
 <contactref element="Q3" pad="2"/>
 <wire x1="58.42" y1="16.53" x2="53.93" y2="16.53" width="1.016" layer="1"/>
 <wire x1="53.93" y1="16.53" x2="52.68" y2="17.78" width="1.016" layer="1"/>
-<wire x1="52.5" y1="18" x2="46.5" y2="18" width="0.254" layer="1"/>
-<wire x1="46.5" y1="18" x2="46.38" y2="17.78" width="0.254" layer="1"/>
-<wire x1="52.5" y1="18" x2="52.68" y2="17.78" width="0.254" layer="1"/>
+<wire x1="46.38" y1="17.78" x2="46.5" y2="18" width="0.254" layer="1"/>
+<wire x1="52.68" y1="17.78" x2="52.5" y2="18" width="0.254" layer="1"/>
+<wire x1="52.5" y1="18" x2="46.6" y2="18" width="1.016" layer="1"/>
+<wire x1="46.6" y1="18" x2="46.38" y2="17.78" width="1.016" layer="1"/>
 </signal>
 <signal name="HP_SSR">
 <contactref element="U3" pad="4"/>
