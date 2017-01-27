@@ -40931,6 +40931,20 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <smd name="GND" x="4.212" y="-3.5" dx="3" dy="0.9" layer="1"/>
 <text x="8.46" y="-7.205" size="1.27" layer="51" rot="R180">&gt;NAME</text>
 </package>
+<package name="SOT-353">
+<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.55" layer="1"/>
+<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.55" layer="1"/>
+<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.55" layer="1"/>
+<smd name="5" x="-0.65" y="0.95" dx="0.4" dy="0.55" layer="1"/>
+<smd name="4" x="0.64" y="0.95" dx="0.4" dy="0.55" layer="1"/>
+<wire x1="-0.95" y1="0.675" x2="-0.95" y2="-0.675" width="0.127" layer="21"/>
+<wire x1="-0.95" y1="-0.675" x2="0.95" y2="-0.675" width="0.127" layer="21"/>
+<wire x1="0.95" y1="-0.675" x2="0.95" y2="0.675" width="0.127" layer="21"/>
+<wire x1="0.95" y1="0.675" x2="-0.95" y2="0.675" width="0.127" layer="21"/>
+<circle x="-0.625" y="-0.2" radius="0.182" width="0.05" layer="21"/>
+<text x="-1.27" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MICROSHIELD">
@@ -41764,6 +41778,18 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 </gates>
 <devices>
 <device name="" package="SOT-553">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DFT" package="SOT-353">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
@@ -49240,7 +49266,7 @@ Silk outline shows header location.
 <part name="GND15" library="GFE" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="Q3" library="GFE" deviceset="NVF6P02" device=""/>
-<part name="U3" library="GFE" deviceset="NL17SZ17" device=""/>
+<part name="U3" library="GFE" deviceset="NL17SZ17" device="DFT" value="NL17SZ17DFT"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="GFE" deviceset="GND" device=""/>
 <part name="X5" library="GFE" deviceset="5267-02" device=""/>
