@@ -49226,9 +49226,9 @@ Silk outline shows header location.
 <part name="V_EXT25" library="GFE" deviceset="V_EXT2" device=""/>
 <part name="GND_EXT25" library="GFE" deviceset="GND_EXT2" device=""/>
 <part name="GND25" library="GFE" deviceset="GND" device=""/>
-<part name="R9" library="GFE" deviceset="R" device="0603(1608)_HAND" value="4.7k"/>
-<part name="R10" library="GFE" deviceset="R" device="0603(1608)_HAND" value="4.7k"/>
-<part name="R11" library="GFE" deviceset="R" device="0603(1608)_HAND" value="4.7k"/>
+<part name="R9" library="GFE" deviceset="R" device="0603(1608)_HAND" value="250"/>
+<part name="R10" library="GFE" deviceset="R" device="0603(1608)_HAND" value="250"/>
+<part name="R11" library="GFE" deviceset="R" device="0603(1608)_HAND" value="250"/>
 <part name="+3V31" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V32" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="GFE" deviceset="GND" device=""/>
