@@ -49309,6 +49309,7 @@ Silk outline shows header location.
 <text x="182.88" y="210.82" size="1.778" layer="91">TODO: capacitor for servo!</text>
 <text x="172.72" y="213.36" size="1.778" layer="91">5V reverse voltage protection</text>
 <text x="53.34" y="88.9" size="1.778" layer="91">TODO: solve USB power back-feeding!!</text>
+<text x="302.26" y="147.32" size="1.778" layer="91">TODO: Bleeder Resistor for Off-State Leakage Current </text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
