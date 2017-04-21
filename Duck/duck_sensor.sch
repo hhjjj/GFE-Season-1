@@ -49800,6 +49800,10 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="68.58" y="175.26" size="1.778" layer="91">500mA</text>
 <text x="96.52" y="96.52" size="1.778" layer="91" rot="R180">PullUp R is already in MPU-9250 Dev</text>
 <text x="190.5" y="10.16" size="1.778" layer="91">piezo interface</text>
+<text x="307.34" y="132.08" size="1.778" layer="91">Tear / Water / Resistive Fluid to Analog Input</text>
+<text x="241.3" y="129.54" size="1.778" layer="91">touch</text>
+<text x="241.3" y="86.36" size="1.778" layer="91">touch</text>
+<text x="312.42" y="86.36" size="1.778" layer="91">touch</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
