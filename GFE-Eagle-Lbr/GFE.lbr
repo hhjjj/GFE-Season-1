@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -41589,7 +41589,7 @@ package type OT</description>
 <pad name="RST" x="11.43" y="11.43" drill="1.016" diameter="1.9304" rot="R0.1"/>
 <pad name="RX" x="-11.43" y="6.35" drill="1.016" diameter="1.9304" rot="R0.1"/>
 <pad name="TX" x="-11.43" y="8.89" drill="1.016" diameter="1.9304" rot="R0.1"/>
-<pad name="VBAT" x="11.43" y="8.89" drill="1.016" diameter="1.9304" rot="R0.1"/>
+<pad name="VBAT_" x="11.43" y="8.89" drill="1.016" diameter="1.9304" rot="R0.1"/>
 <pad name="VIN" x="-11.43" y="13.97" drill="1.016" diameter="1.9304" rot="R0.1"/>
 <pad name="WKP" x="-11.43" y="3.81" drill="1.016" diameter="1.9304" rot="R0.1"/>
 <text x="3.81" y="-15.24" size="1.016" layer="51" font="vector" align="center">Keepout'</text>
@@ -43112,7 +43112,7 @@ Breadboard-friendly pins.
 <pin name="GND@21" x="20.32" y="7.62" length="short" direction="pwr" rot="R180"/>
 <pin name="RX" x="-22.86" y="7.62" length="short"/>
 <pin name="TX" x="-22.86" y="10.16" length="short"/>
-<pin name="VBAT" x="20.32" y="10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="VBAT_" x="20.32" y="10.16" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN" x="-22.86" y="15.24" length="short" direction="pwr"/>
 <pin name="WKP" x="-22.86" y="5.08" length="short"/>
 <text x="-20.32" y="18.034" size="1.778" layer="95" font="vector">&gt;Name</text>
@@ -44327,7 +44327,7 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 <connect gate="G$1" pin="GND@21" pad="21"/>
 <connect gate="G$1" pin="RX" pad="4"/>
 <connect gate="G$1" pin="TX" pad="3"/>
-<connect gate="G$1" pin="VBAT" pad="22"/>
+<connect gate="G$1" pin="VBAT_" pad="22"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="WKP" pad="5"/>
 </connects>
@@ -44358,7 +44358,7 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 <connect gate="G$1" pin="GND@21" pad="21 GND@2"/>
 <connect gate="G$1" pin="RX" pad="4 RX"/>
 <connect gate="G$1" pin="TX" pad="3 TX"/>
-<connect gate="G$1" pin="VBAT" pad="22 VBAT"/>
+<connect gate="G$1" pin="VBAT_" pad="22 VBAT_"/>
 <connect gate="G$1" pin="VIN" pad="1 VIN"/>
 <connect gate="G$1" pin="WKP" pad="5 WKP"/>
 </connects>
@@ -44389,7 +44389,7 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 <connect gate="G$1" pin="GND@21" pad="21 GND@2"/>
 <connect gate="G$1" pin="RX" pad="4 RX"/>
 <connect gate="G$1" pin="TX" pad="3 TX"/>
-<connect gate="G$1" pin="VBAT" pad="22 VBAT"/>
+<connect gate="G$1" pin="VBAT_" pad="22 VBAT"/>
 <connect gate="G$1" pin="VIN" pad="1 VIN"/>
 <connect gate="G$1" pin="WKP" pad="5 WKP"/>
 </connects>
