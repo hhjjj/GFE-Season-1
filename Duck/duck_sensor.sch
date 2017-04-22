@@ -49804,6 +49804,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="241.3" y="129.54" size="1.778" layer="91">touch</text>
 <text x="241.3" y="86.36" size="1.778" layer="91">touch</text>
 <text x="312.42" y="86.36" size="1.778" layer="91">touch</text>
+<text x="190.5" y="5.08" size="1.778" layer="91">3.3V zener for overvoltage protection</text>
+<text x="243.84" y="210.82" size="1.778" layer="91">3.3V zener for overvoltage protection</text>
+<text x="7.62" y="27.94" size="1.778" layer="91">select exter i2c power</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -49923,10 +49926,10 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="GND3" gate="1" x="33.02" y="114.3"/>
 <instance part="VIN2" gate="G$1" x="20.32" y="116.84" rot="R90"/>
 <instance part="LOGO1" gate="G$1" x="144.78" y="134.62"/>
-<instance part="H1" gate="G$1" x="299.72" y="165.1"/>
-<instance part="H2" gate="G$1" x="330.2" y="167.64"/>
-<instance part="H3" gate="G$1" x="363.22" y="167.64"/>
-<instance part="H4" gate="G$1" x="373.38" y="152.4"/>
+<instance part="H1" gate="G$1" x="271.78" y="165.1"/>
+<instance part="H2" gate="G$1" x="302.26" y="165.1"/>
+<instance part="H3" gate="G$1" x="271.78" y="154.94"/>
+<instance part="H4" gate="G$1" x="302.26" y="154.94"/>
 </instances>
 <busses>
 </busses>
