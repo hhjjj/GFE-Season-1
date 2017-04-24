@@ -49807,6 +49807,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="190.5" y="5.08" size="1.778" layer="91">3.3V zener for overvoltage protection</text>
 <text x="243.84" y="210.82" size="1.778" layer="91">3.3V zener for overvoltage protection</text>
 <text x="7.62" y="27.94" size="1.778" layer="91">select exter i2c power</text>
+<text x="236.22" y="45.72" size="1.778" layer="91">D4 is for LED!!! S4 is not being used now</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
